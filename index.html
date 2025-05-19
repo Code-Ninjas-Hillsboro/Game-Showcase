@@ -3,37 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Selection</title>
+    <title>[Ninja first name]'s Games</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 50px;
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .button-container {
-            margin-top: 30px;
+         
+            margin-bottom: 30px;
+        }
+        .section-header {
+            display: block; /* Ensures the header is block-level */
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            border-radius: 25px;
+            margin: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         button {
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-            margin: 10px;
+            margin: 10px 0; /* Adds margin between button and header */
             border: none;
-            background-color: #4CAF50;
+            background-color: #3490bf;
             color: white;
             border-radius: 5px;
         }
         button:hover {
-            background-color: #45a049;
+            background-color: #1090bf;
         }
     </style>
 </head>
 <body>
+    <h1>[Ninja first name]'s Games</h1>
+    
     <div class="button-container">
+        <div class="section-header">Subdirectory 1</div>
         <button onclick="window.location.href='subdir1/index.html'">Go to [game 1 name not yet added]</button>
-        <button onclick="window.location.href='subdir2/index.html'">Go to [game 2 name not yet added]</button>
-        <button onclick="window.location.href='subdir3/index.html'">Go to [game 3 name not yet added]</button>
-        <button onclick="window.location.href='subdir4/index.html'">Go to [game 4 name not yet added]</button>
+    </div>
+    
+    <div class="button-container">
+        <div class="section-header">Subdirectory 2</div>
+        <button onclick="window.location.href='subdir2/index.html'">Go to [game 1 name not yet added]</button>
+    </div>
+    
+    <div class="button-container">
+        <div class="section-header">Subdirectory 3</div>
+        <button onclick="window.location.href='subdir3/index.html'">Go to [game 1 name not yet added]</button>
+    </div>
+    
+    <div class="button-container">
+        <div class="section-header">Subdirectory 4</div>
+        <button onclick="window.location.href='subdir4/index.html'">Go to [game 1 name not yet added]</button>
     </div>
 </body>
 </html>
+
